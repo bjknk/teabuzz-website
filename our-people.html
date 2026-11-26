@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#241052">
+  <meta name="description" content="Meet the people who helped bring TeaBuzz to life.">
+  <title>The People Behind the Buzz | TeaBuzz</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=1">
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="our-people.css">
+</head>
+<body>
+  <div class="announcement"><span class="spark">✦</span> Made for student life. Ready for yours. <a href="index.html#download">Get TeaBuzz <span>↗</span></a></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="TeaBuzz home"><img src="assets/logo.png" alt="TeaBuzz logo"><span>TeaBuzz</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#discover">Discover</a><a href="index.html#features">Features</a><a href="index.html#story">Our story</a>
+      <a href="our-people.html" aria-current="page">Our People</a><a href="index.html#community">Community</a><a class="nav-cta" href="index.html#download">Get the app <span>↗</span></a>
+    </nav>
+  </header>
+  <main class="people-page">
+    <section class="people-hero"><div class="people-hero-glow"></div><div class="people-hero-content">
+      <div class="people-eyebrow"><span></span> THE PEOPLE BEHIND TEABUZZ</div>
+      <h1>The People<br>Behind the <em>Buzz.</em></h1>
+      <p>Every video has people behind it. Today, we're celebrating the faces, energy and creativity that helped bring the TeaBuzz story to life.</p>
+      <div class="people-hero-note"><b>✳</b> A little appreciation goes a long way.</div>
+    </div><div class="people-hero-sticker" aria-hidden="true">MADE<br>TOGETHER <span>✦</span></div></section>
+    <section class="people-gallery" aria-labelledby="models-actors-heading">
+      <div class="people-section-heading"><div class="people-kicker">01 / OUR FIRST APPRECIATION EDITION</div>
+        <h2 id="models-actors-heading">Models, Actors <em>&amp; Students</em></h2>
+        <p>To everyone who stepped in front of the camera and helped us tell the TeaBuzz story — thank you. Your time, confidence and contribution mean a lot.</p>
+      </div>
+      <div class="people-grid">
+        <article class="person-card"><div class="person-portrait"><span>EB</span><img src="assets/emmaculate-banga.jpg" alt="Emmaculate Banga" loading="lazy"></div><h3>Emmaculate Banga</h3></article>
+        <article class="person-card"><div class="person-portrait"><span>A</span><img src="assets/abigail.jpg" alt="Abigail" loading="lazy"></div><h3>Abigail</h3></article>
+        <article class="person-card"><div class="person-portrait"><span>AF</span><img src="assets/armel-feujio.jpg" alt="Armel Feujio" loading="lazy"></div><h3>Armel Feujio</h3></article>
+        <article class="person-card"><div class="person-portrait"><span>E</span><img src="assets/elloh.jpg" alt="Elloh" loading="lazy"></div><h3>Elloh</h3></article>
+        <article class="person-card"><div class="person-portrait"><span>LK</span><img src="assets/lindsay-kasiyazi.jpg" alt="Lindsay Kasiyazi" loading="lazy"></div><h3>Lindsay Kasiyazi</h3></article>
+        <article class="person-card"><div class="person-portrait"><span>S</span><img src="assets/sago.jpg" alt="Sago" loading="lazy"></div><h3>Sago</h3></article>
+        <article class="person-card"><div class="person-portrait"><span>P</span><img src="assets/perle.jpg" alt="Perle" loading="lazy"></div><h3>Perle</h3></article>
+        <article class="person-card"><div class="person-portrait"><span>T</span><img src="assets/tizzy.jpg" alt="Tizzy" loading="lazy"></div><h3>Tizzy</h3></article>
+      </div>
+    </section>
+    <section class="people-thanks"><div class="people-thanks-star">✳</div><div class="people-kicker">THIS IS ONLY THE BEGINNING</div>
+      <h2>TeaBuzz is built by ideas.<br><em>And brought to life by people.</em></h2>
+      <p>To every person who has been part of the journey so far, thank you for helping us make the buzz.</p>
+      <span>Made by a Zimbabwean. Built for students everywhere. ❤️</span>
+    </section>
+  </main>
+  <footer class="footer"><div class="footer-main">
+    <a class="brand footer-brand" href="index.html"><img src="assets/logo.png" alt=""><span>TeaBuzz</span></a>
+    <p>Your campus. Your people. Your buzz.</p><div class="footer-social"><a href="https://www.instagram.com/teabu_zz/" target="_blank" rel="noopener" aria-label="Instagram">◎</a></div>
+  </div><div class="footer-bottom"><span>© <span id="year"></span> TeaBuzz. All rights reserved.</span><span>Made for students, everywhere. ✳</span><a href="mailto:blackishtechnologies@gmail.com">Contact us ↗</a></div></footer>
+  <script src="script.js"></script>
+  <script>
+    document.querySelectorAll('.person-portrait img').forEach(img => {
+      img.addEventListener('error', () => { img.hidden = true; });
+    });
+  </script>
+</body>
+</html>
